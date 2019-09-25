@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+}
+
+li {
+	font-size: 20px;
+}
+
+#container div {
+	margin: 1%;
+}
+
+#mapId, #info {
+	height: 420px;
+	width: 500px;
+	float: left;
+}
+
+#geocode {
+	background-color: darkcyan;
+	width: 500px;
+	height: 400px;
+	float: left;
+	padding: 1%;
+	text-align: center;
+	overflow: auto; 	
+}
+
+#recent {
+	list-style : none;
+	text-align: left;
+}
+
+#recent li {
+	margin-left: 20%;
+}
+
+#recent li:hover{
+	cursor: pointer;
+}
+
+#highlight {	
+	color: #bce03a;
+}
+
+#info{
+	background-color: white;
+	height: 230px;
+}
+
+#infoHead{
+	margin-left: 3%;
+}
+
+#infoList {
+	margin-left: 0;
+}
+
+#b {
+	font-weight : bold;
+}
+
+#small {
+	font-size: 18px;
+}
+

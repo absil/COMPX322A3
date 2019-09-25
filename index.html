@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Location Finder</title>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <!-- link to the css for the leaflet map -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+        <!-- link to the javascript for the leaftlet map -->
+     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <div id="container">            
+            <div id="geocode">
+                <h2>WHERE WOULD YOU LIKE TO VISIT?</h2>
+                <input type="text" id="townInput">
+                <button type="button" id="searchButton" onclick="searchTown()">Search</button>
+		<h3>Recent Searches</h3>
+		<ul id="recent"></ul>	
+            </div>
+		<div>
+		<div id="mapId"></div>
+		<div id="info">
+		        <h2 id="infoHead"></h2>
+		        <ul id="infoList">
+		        </ul>
+		</div>
+            </div>   
+        </div>    
+    <script src="javascript/services.js"></script>
+    </body>
+</html>
